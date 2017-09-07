@@ -4,6 +4,8 @@ import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.ResponseBody;
 
+import com.wangyuelin.model.User;
+
 @Controller
 public class IndexController {
 
@@ -16,8 +18,7 @@ public class IndexController {
 		// map.put("jack", "value2");
 		// DefaultIndenter de = new DefaultIndenter();
 		User user = new User();
-		user.name = "wangyulein";
-		user.sex = "man";
+		user.setName("wangyulein");;
 		return user;
 
 	}
